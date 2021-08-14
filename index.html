@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class='w-100 text-center'>Pro Player Power Rankings: <span class="navbar-text 
+                     text-white">&nbsp;TEU - VIV
+            </span></h1>
+    </nav>
+    <div class="main container">
+        <div id="layer"></div>
+        <div class="row m-auto row-eq">
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">1<sup>st</sup>: ADPZ <span class='float-right'>23 <span
+                                    class="check">&check;</span></span>
+                        </h5>
+                        <p class="card-text">
+                        <ul class='pros'>
+                            <li>
+                                3-4 turn wins with GX, Boss, Boss for vulnerable 2 prizers
+                            </li>
+                            <li>
+                                Locks out many archetypes
+                            </li>
+                            <li>
+                                Stats don't lie: it wins a lot
+                            </li>
+                        </ul>
+                        <ul class='cons'>
+                            <li>
+                                Linear strategy
+                            </li>
+                            <li>
+                                Losing ADP after GX turn can disrupt
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">2<sup>nd</sup>: Pikarom <span class='float-right'>21 <span
+                                    class="check">&check;</span></span>
+                        </h5>
+                        <p class="card-text">
+                        <ul class='pros'>
+                            <li>
+                                Consistency and Acceleration
+                            </li>
+                            <li>
+                                Options/Versatility
+                            </li>
+                            <li>
+                                Strong disruption with stamp + paralysis
+                            </li>
+                        </ul>
+                        <ul class='cons'>
+                            <li>
+                                More options make it harder to pilot
+                            </li>
+                            <li>
+                                ADP matchup CAN be bad
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">3<sup>rd</sup>: LucMetal <span class='float-right'>7 <span
+                                    class="check">&check;</span></span>
+                        </h5>
+                        <p class="card-text">
+                        <ul class='pros'>
+                            <li>
+                                Has solid matchups against everything not fire
+                            </li>
+                            <li>
+                                Outlasts most decks
+                            </li>
+                        </ul>
+                        <ul class='cons'>
+                            <li>
+                                Fire
+                            </li>
+                            <li>
+                                Trouble vs conservative, strong pilots of ADP/Pika
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">4<sup>th</sup>: Eternatus <span class='float-right'>3 <span
+                                    class="check">&check;</span></span>
+                        </h5>
+                        <p class="card-text">
+                        <ul class='pros'>
+                            <li>
+                                Incredibly strong when draws hot
+                            </li>
+                            <li>
+                                Consistent
+                            </li>
+                        </ul>
+                        <ul class='cons'>
+                            <li>
+                                Needs too much to set up for some situations
+                            </li>
+                            <li>
+                                Susceptible to disruption and energy removal
+                            </li>
+                            <li>
+                                Limited to dark types
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">5<sup>th</sup>: M3W <span class='float-right'>3 <span
+                                    class="check">&check;</span></span>
+                        </h5>
+                        <p class="card-text">
+                        <ul class='pros'>
+                            <li>
+                                Acceleartion
+                            </li>
+                            <li>
+                                Options/Versatility
+                            </li>
+                        </ul>
+                        <ul class='cons'>
+                            <li>
+                                Needs Dedenne to set up, which is an easy ADP target
+                            </li>
+                            <li>
+                                Can be forced into tough situations by awkward hands
+                            </li>
+                            <li>
+                                Inconsistency
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card ">
+                    <div class="card-body">
+                        <h5 class="card-title text-light" id='votes-title'>BDIF votes </span>
+                        </h5>
+                        <p class="card-text" id="votes">
+                            ADPZ: <img src="voters/Alex.jpg" class='voter'><img src="voters/Le.jpg" class='voter'><img
+                                src="voters/Rahul.jpg" class='voter'><img src="voters/Pablo.jpg" class='voter'><img
+                                src="voters/Danny.jpg" class='voter'><br><br>
+                            Pikarom: <img src="voters/Tord.jpg" class='voter'><img src="voters/Em.jpg"
+                                class='voter'><img src="voters/Pedro.jpg" class='voter'><img src="voters/Stephane.jpg"
+                                class='voter'><br><br>
+                            LucMetal: <img src="voters/Israel.jpg" class='voter'><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
